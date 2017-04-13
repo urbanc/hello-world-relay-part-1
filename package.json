@@ -5,7 +5,7 @@
   "repository": "github.com/sogko/golang-relay-starter-kit",
   "version": "0.1.0",
   "scripts": {
-    "start": "go run graphql.go & babel-node ./server.js",
+    "start": "babel-node ./server.js",
     "update-schema": "cd ./scripts && go run updateSchema.go"
   },
   "dependencies": {

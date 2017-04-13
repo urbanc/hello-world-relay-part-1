@@ -6,7 +6,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>{this.props.latestPost.text}</h1>
+        <h1>{this.props.allUsers.email}</h1>
       </div>
     );
   }
@@ -17,9 +17,9 @@ class App extends React.Component {
 // the GraphQL query fragments that fetch their data.
 export default Relay.createContainer(App, {
   fragments: {
-    latestPost: () => Relay.QL`
-      fragment on Post {
-        text
+    allUsers: () => Relay.QL`
+      fragment on User {
+        email
       }
     `,
   },
